@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # Aktifkan CORS untuk semua rute
 
 # Memuat model hanya sekali saat server dimulai
-MODEL_PATH = 'mobilenetv2_model_with_regularization.h5'
+MODEL_PATH = 'static/mobilenetv2_model_with_regularization.h5'
 model = load_model(MODEL_PATH)
 
 # Daftar label kelas (sesuai dengan urutan kelas yang digunakan selama pelatihan)
